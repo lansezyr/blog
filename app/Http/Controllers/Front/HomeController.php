@@ -4,7 +4,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use FrontRepository;
-use Redis;
+//use Redis;
+use Illuminate\Support\Facades\Redis;
+
 class HomeController extends Controller
 {
     public function index()

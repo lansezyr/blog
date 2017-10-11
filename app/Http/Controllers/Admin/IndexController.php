@@ -13,7 +13,7 @@ class IndexController extends Controller
 
 	/**
 	 * dataTable 多语言
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-11T14:13:10+0800
 	 * @return [type]                   [description]
 	 */

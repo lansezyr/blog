@@ -4,7 +4,7 @@ use Auth;
 trait ActionAttributeTrait{
 	/**
 	 * 查看按钮
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T16:52:18+0800
 	 * @param  boolean                  $type [默认为跳转页面查看信息,false时a链接带上modal样式]
 	 * @return [type]                         [description]
@@ -26,7 +26,7 @@ trait ActionAttributeTrait{
 
 	/**
 	 * 修改按钮
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-03-10T10:08:56+0800
 	 * @return [type]                   [description]
 	 */
@@ -40,7 +40,7 @@ trait ActionAttributeTrait{
 
 	/**
 	 * 添加回收站/禁用按钮
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-03-10T10:07:20+0800
 	 * @return [type]                   [description]
 	 */
@@ -56,7 +56,7 @@ trait ActionAttributeTrait{
 
 	/**
 	 * 从回收站恢复到待审核状态
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-03-10T12:14:28+0800
 	 * @return [type]                          [description]
 	 */
@@ -72,7 +72,7 @@ trait ActionAttributeTrait{
 
 	/**
 	 * 通过审核按钮
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-03-10T12:12:44+0800
 	 * @return [type]                   [description]
 	 */
@@ -88,7 +88,7 @@ trait ActionAttributeTrait{
 
 	/**
 	 * 彻底删除按钮
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-03-10T10:08:20+0800
 	 * @return [type]                   [description]
 	 */
@@ -104,7 +104,7 @@ trait ActionAttributeTrait{
 
 	/**
 	 * 修改用户密码
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-14T09:30:32+0800
 	 * @return [type]                   [description]
 	 */
@@ -116,8 +116,39 @@ trait ActionAttributeTrait{
 		return '';
 	}
 
+    /**
+     * 相册新增照片按钮
+     * @author 胖子
+     * @return [type]                         [description]
+     */
+    public function getAlbumAddPhotoActionButton()
+    {
+        //开启相册新增照片按钮
+        if (config('admin.global.'.$this->action.'.add_photo')) {
+            if (Auth::user()->can(config('admin.permissions.'.$this->action.'.add_photo'))) {
+                return '<a href="'.url('admin/'.$this->action.'/'.$this->id . '/addPhoto').'" class="btn btn-xs btn-info tooltips" data-container="body" data-original-title="' . trans('labels.'.$this->action.'.add_photo') . '"  data-placement="top"><i class="fa fa-picture-o"></i></a>';
+            }
+            return '';
+        }
+        return '';
+    }
 
-	
+    /**
+     * 相册照片列表按钮
+     * @author 胖子
+     * @return [type]                         [description]
+     */
+    public function getAlbumPhotosActionButton()
+    {
+        //相册照片列表按钮
+        if (config('admin.global.'.$this->action.'.photos')) {
+            if (Auth::user()->can(config('admin.permissions.'.$this->action.'.photos'))) {
+                return '<a href="'.url('admin/'.$this->action.'/'.$this->id . '/photoShow').'" class="btn btn-xs btn-info tooltips" data-container="body" data-original-title="' . trans('labels.'.$this->action.'.photoShow') . '"  data-placement="top"><i class="fa fa-indent"></i></a>';
+            }
+            return '';
+        }
+        return '';
+    }
 
 	public function getActionButtonAttribute($showType = true)
 	{
@@ -127,6 +158,8 @@ trait ActionAttributeTrait{
 				$this->getUndoActionButton().
 				$this->getAuditActionButton().
 				$this->getTrashActionButton().
-				$this->getDestoryActionButton($showType);
+				$this->getDestoryActionButton($showType).
+                $this->getAlbumAddPhotoActionButton().
+                $this->getAlbumPhotosActionButton();
 	}
 }

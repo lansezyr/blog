@@ -35,6 +35,8 @@ Route::group(['namespace' => 'Front','middleware' => ['web']], function ($router
     $router->get('article/{id}','ArticleController@show')->where(['id' => '\d+']);
     $router->get('cate/{id}','CategoryController@show')->where(['id' => '\d+']);
     $router->get('tag/{id}','TagController@show')->where(['id' => '\d+']);
+    $router->get('album','AlbumController@show');
+    $router->get('album/{id}','AlbumController@list')->where(['id' => '\d+']);
 });
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' => ['web', 'auth']], function ($router) {
@@ -55,4 +57,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' => ['web'
     require(__DIR__ . '/Routes/TagRoute.php');
     // 文章
     require(__DIR__ . '/Routes/ArticleRoute.php');
+    //相册
+    require(__DIR__ . '/Routes/AlbumRoute.php');
 });

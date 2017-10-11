@@ -7,7 +7,7 @@ class CategoryRepository
 {
 	/**
 	 * 获取分类数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T17:10:54+0800
 	 * @return [type]                   [description]
 	 */
@@ -22,7 +22,7 @@ class CategoryRepository
 	/**
 	 * 递归迭代分类关系
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $categories [description]
 	 * @param  integer    $pid        [description]
 	 * @return [type]                 [description]
@@ -40,7 +40,7 @@ class CategoryRepository
 	/**
 	 * 缓存分类数据
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 */
 	public function setCateListCache()
 	{
@@ -67,7 +67,7 @@ class CategoryRepository
 	/**
 	 * 获取分类数据
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $id [description]
 	 * @return [type]         [description]
 	 */
@@ -84,7 +84,7 @@ class CategoryRepository
 	/**
 	 * 修改分类数据
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $request [description]
 	 * @param  [type]     $id      [description]
 	 * @return [type]              [description]
@@ -109,7 +109,7 @@ class CategoryRepository
 	/**
 	 * 添加分类
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $request [description]
 	 * @return [type]              [description]
 	 */
@@ -128,7 +128,7 @@ class CategoryRepository
 
 	/**
 	 * 分类排序
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T15:43:19+0800
 	 * @return [type]                   [description]
 	 */
@@ -155,7 +155,7 @@ class CategoryRepository
 	/**
 	 * 删除分类
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $id [description]
 	 * @return [type]         [description]
 	 */
@@ -173,7 +173,7 @@ class CategoryRepository
 	}
 	/**
 	 * 更新缓存
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-13T15:45:53+0800
 	 * @return [type]                   [description]
 	 */

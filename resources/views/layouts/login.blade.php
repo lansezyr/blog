@@ -7,7 +7,7 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>IAdmin</title>
+        <title>xPangZi后台管理系统</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -26,30 +26,51 @@
         <!-- BEGIN THEME LAYOUT STYLES -->
         <!-- END THEME LAYOUT STYLES -->
         <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+        <link href="{{asset('backend/plugins/particleground/css/style.css')}}" rel="stylesheet" type="text/css" />
         </head>
     <!-- END HEAD -->
-
-    <body class=" login">
-        <div class="menu-toggler sidebar-toggler"></div>
-        <!-- END SIDEBAR TOGGLER BUTTON -->
-        <!-- BEGIN LOGO -->
+    <style>
+        body{height:100%;background:#16a085;overflow:hidden;}
+        canvas{z-index:-1;position:absolute;}
+    </style>
+    <body class="login" style="background: #16a085;">
+    <!--<div class="menu-toggler sidebar-toggler"></div>  -->
+    <!-- END SIDEBAR TOGGLER BUTTON -->
+        <!-- BEGIN LOGO
         <div class="logo">
             <a href="/">
                 <img src="{{asset('backend/img/logo-big.png')}}" alt="" />
             </a>
-        </div>
+        </div>-->
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->
-        <div class="content">
-            @yield('content')
+        <!-- count particles-->
+
+        <!-- particles.js container -->
+        <div id="particles">
+            <div class="content" style="margin-top: 10%;">
+                @yield('content')
+            </div>
         </div>
-        <div class="copyright"> 2016 © IAdmin Dashboard. </div>
+        <div class="copyright"> 2017 © IAdmin Dashboard. </div>
         <!--[if lt IE 9]>
             <script src="../assets/global/plugins/respond.min.js"></script>
             <script src="../assets/global/plugins/excanvas.min.js"></script> 
         <![endif]-->
         <script src="{{asset('backend/plugins/jquery.min.js')}}" type="text/javascript"></script>
         <script src="{{asset('backend/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+
+        <!-- scripts -->
+        <script src="{{asset('backend/plugins/particleground/jquery.particleground.js')}}"></script>
+        <script>
+            $(document).ready(function() {
+                //粒子背景特效
+                $('#particles').particleground({
+                    dotColor: '#5cbdaa',
+                    lineColor: '#5cbdaa'
+                });
+            });
+        </script>
     </body>
 
 </html>

@@ -5,7 +5,8 @@ use App\Models\Tag;
 use Carbon\Carbon;
 use Flash;
 use zgldh\QiniuStorage\QiniuStorage;
-use Redis;
+//use Redis;
+use Illuminate\Support\Facades\Redis;
 use Cache;
 /**
 * 文章仓库
@@ -15,7 +16,7 @@ class ArticleRepository
 	/**
 	 * datatable获取数据
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
 	public function ajaxIndex()
@@ -94,7 +95,7 @@ class ArticleRepository
 	/**
 	 * 添加文章
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $request [description]
 	 * @return [type]              [description]
 	 */
@@ -137,7 +138,7 @@ class ArticleRepository
 	}
 	/**
 	 * 修改视图
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-12T16:48:46+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -156,7 +157,7 @@ class ArticleRepository
 	}
 	/**
 	 * 修改文章
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-12T17:24:53+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -207,7 +208,7 @@ class ArticleRepository
 
 	/**
 	 * 修改文章状态
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T09:35:34+0800
 	 * @param  [type]                   $id     [description]
 	 * @param  [type]                   $status [description]
@@ -241,7 +242,7 @@ class ArticleRepository
 
 	/**
 	 * 上传图片到七牛
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-07T11:05:27+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -259,7 +260,7 @@ class ArticleRepository
 	}
 	/**
 	 * markdown 图片上传
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-12T09:50:15+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]

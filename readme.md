@@ -86,7 +86,7 @@ if (strpos($this->app->version(), 'Lumen') !== false) {
 
 如有什么错误的地方，请指点，非常感谢！也可以直接联系我：709344897@qq.com 。(发现邮箱反馈的时候腾讯会移动到垃圾邮箱，如果我没看到加我这个QQ联系也可以，我在想一下怎么反馈最好)
 
-本人博客地址：[i晚黎](http://www.iwanli.me)
+本人博客地址：[i胖子](http://www.xpangzi.com)
 
 ## Change Log
 

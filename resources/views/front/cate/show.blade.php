@@ -1,11 +1,11 @@
 @extends('layouts.index')
 @section('title')
-<title>{{$category}} - i晚黎博客</title>
+<title>{{$category}} - x胖子博客</title>
 @endsection
 @section('promo')
 <section class="breadcrumbs-v5 bg-position-fixed breadcrumbs-v5-bg-img-v4">
     <div class="container">
-        <h2 class="breadcrumbs-v5-title">I am Wanli</h2>
+        <h2 class="breadcrumbs-v5-title">I am xPangZi</h2>
         <span class="breadcrumbs-v5-subtitle">I am a slow walker, but I never walk backwards...</span>
     </div>
 </section>
@@ -41,7 +41,8 @@
                          -  <i class="fa fa-clock-o"></i> {{$v->created_at}}
                     </span>
                     <span class="blog-grid-supplemental-title pull-right">
-                        <i class="fa fa-eye"></i> {{Redis::get(config('admin.global.redis.article_view').$v->id)}}
+                        <i class="fa fa-eye"></i>
+                        {{Illuminate\Support\Facades\Redis::get(config('admin.global.redis.article_view').$v->id)}}
                     </span>
                 </div>
             </div>

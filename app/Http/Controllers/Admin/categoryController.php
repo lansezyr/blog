@@ -18,7 +18,7 @@ class CategoryController extends Controller
 	/**
 	 * 分类首页
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
     public function index()
@@ -29,7 +29,7 @@ class CategoryController extends Controller
     /**
      * 修改分类数据视图
      * @date   2016-05-05
-     * @author 晚黎
+     * @author 胖子
      * @param  [type]     $id [description]
      * @return [type]         [description]
      */
@@ -41,7 +41,7 @@ class CategoryController extends Controller
     /**
      * 修改分类
      * @date   2016-05-05
-     * @author 晚黎
+     * @author 胖子
      * @param  CategoryRequest $request [description]
      * @param  [type]          $id      [description]
      * @return [type]                   [description]
@@ -54,7 +54,7 @@ class CategoryController extends Controller
     /**
      * 添加分类
      * @date   2016-05-05
-     * @author 晚黎
+     * @author 胖子
      * @param  CategoryRequest $request [description]
      * @return [type]                   [description]
      */
@@ -66,7 +66,7 @@ class CategoryController extends Controller
     /**
      * 分类排序
      * @date   2016-05-05
-     * @author 晚黎
+     * @author 胖子
      * @return [type]     [description]
      */
     public function sort()
@@ -78,7 +78,7 @@ class CategoryController extends Controller
     /**
      * 删除分类
      * @date   2016-05-05
-     * @author 晚黎
+     * @author 胖子
      * @param  [type]     $id [description]
      * @return [type]         [description]
      */

@@ -10,7 +10,7 @@ class PermissionRepository
 {
 	/**
 	 * datatable获取数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-11T16:44:40+0800
 	 * @return [type]                   [description]
 	 */
@@ -119,7 +119,7 @@ class PermissionRepository
 
 	/**
 	 * 添加权限
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-12T14:46:02+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -136,7 +136,7 @@ class PermissionRepository
 	}
 	/**
 	 * 修改视图
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-12T16:48:46+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -151,7 +151,7 @@ class PermissionRepository
 	}
 	/**
 	 * 修改权限
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-12T17:24:53+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -172,7 +172,7 @@ class PermissionRepository
 
 	/**
 	 * 修改权限状态
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T09:35:34+0800
 	 * @param  [type]                   $id     [description]
 	 * @param  [type]                   $status [description]
@@ -206,7 +206,7 @@ class PermissionRepository
 
 	/**
 	 * 获取所有权限并分组
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T13:30:34+0800
 	 * @return [type]                   [description]
 	 */

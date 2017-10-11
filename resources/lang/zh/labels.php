@@ -7,7 +7,7 @@ return [
 	'cateLevel' => '顶级分类',
 	'logout' => '退出',
 	'hot' => '暂无热门文章',
-	'tag' => '暂无标签',
+	//'tag' => '暂无标签',
 	'user' => [
 		'id' => '序号',
 		'name' => '用户名',
@@ -101,6 +101,28 @@ return [
 		'tagCreate' => '新增标签',
 		'content' => '文章内容',
 	],
+    'album' => [
+        'id' => 'ID',
+        'name' => '名称',
+        'cover' => '封面',
+        'status' => '状态',
+        'user_id' => '创建人',
+        'description' => '简介',
+        'created_at' => '创建时间',
+        'updated_at' => '修改时间',
+        'add_photo'  => '新增照片',
+        'photoShow' => '相册照片',
+    ],
+    'photo' => [
+        'id' => 'ID',
+        'album_id' => '相册ID',
+        'image_url' => '照片地址',
+        'status' => '状态',
+        'user_id' => '创建人',
+        'description' => '简介',
+        'created_at' => '创建时间',
+        'updated_at' => '修改时间',
+    ],
 	'home' => [
 		'hot' => '热门文章',
 		'tag' => '标签'
@@ -129,5 +151,10 @@ return [
 		'articleList' => '<i class="fa fa-bars"></i> 文章列表',
 		'articleCreate' => '<i class="fa fa-plus"></i> 添加文章',
 		'articleEdit' => '<i class="fa fa-pencil"></i> 修改文章',
+        'albumList' => '<i class="fa fa-bars"></i> 相册管理',
+		'albumCreate' => '<i class="fa fa-bars"></i> 添加相册',
+        'albumEdit'   => '<i class="fa fa-pencil"></i> 修改相册',
+        'albumAddPhoto'   => '<i class="fa fa-pencil"></i> 新增照片',
+        'photoList'       => '<i class="fa fa-navicon"></i> 照片列表',
 	]
 ];

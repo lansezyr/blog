@@ -8,7 +8,7 @@ class CategoryController extends Controller
 {
 	/**
 	 * 显示分类下面的文章
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-18T17:21:03+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]

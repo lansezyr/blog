@@ -10,7 +10,7 @@ class RoleRepository
 {
 	/**
 	 * datatable获取数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:49:03+0800
 	 * @return [type]                   [description]
 	 */
@@ -119,7 +119,7 @@ class RoleRepository
 
 	/**
 	 * 添加角色
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:50:22+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -140,7 +140,7 @@ class RoleRepository
 	}
 	/**
 	 * 修改角色视图
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:50:34+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -159,7 +159,7 @@ class RoleRepository
 	}
 	/**
 	 * 修改角色
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:50:46+0800
 	 * @param  [type]                   $request [description]
 	 * @param  [type]                   $id      [description]
@@ -185,7 +185,7 @@ class RoleRepository
 
 	/**
 	 * 修改角色状态
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:51:02+0800
 	 * @param  [type]                   $id     [description]
 	 * @param  [type]                   $status [description]
@@ -208,7 +208,7 @@ class RoleRepository
 
 	/**
 	 * 删除角色
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:51:19+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -226,7 +226,7 @@ class RoleRepository
 
 	/**
 	 * 查看角色权限
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T17:09:22+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -245,7 +245,7 @@ class RoleRepository
 
 	/**
 	 * 获取所有的角色
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-14T09:47:54+0800
 	 * @return [type]                   [description]
 	 */

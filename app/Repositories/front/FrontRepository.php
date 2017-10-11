@@ -5,12 +5,13 @@ use App\Models\Article;
 use App\Models\ArticleTag;
 use App\Models\Tag;
 use Cache;
-use Redis;
+//use Redis;
+use Illuminate\Support\Facades\Redis;
 class FrontRepository
 {
 	/**
 	 * 获取分类数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T17:10:54+0800
 	 * @return [type]                   [description]
 	 */
@@ -26,7 +27,7 @@ class FrontRepository
 	/**
 	 * 递归迭代分类关系
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $categories [description]
 	 * @param  integer    $pid        [description]
 	 * @return [type]                 [description]
@@ -44,7 +45,7 @@ class FrontRepository
 	/**
 	 * 缓存分类数据
 	 * @date   2016-05-05
-	 * @author 晚黎
+	 * @author 胖子
 	 */
 	public function setCateListCache()
 	{
@@ -74,7 +75,7 @@ class FrontRepository
 	/**
 	 * 获取文章
 	 * @date   2016-05-09
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
 	public function getArticles()
@@ -85,7 +86,7 @@ class FrontRepository
 	}
 	/**
 	 * 文章详情
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-18T20:54:29+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -110,7 +111,7 @@ class FrontRepository
 
 	/**
 	 * 获取文章的分类
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-13T15:27:07+0800
 	 * @param  [type]                   $category_id [description]
 	 * @return [type]                                [description]
@@ -123,23 +124,23 @@ class FrontRepository
 
 	/**
 	 * 获取缓存中所有的分类
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-18T17:40:08+0800
 	 * @return [type]                   [description]
 	 */
 	public function getAllCategory()
 	{
-		if (Cache::has(config('admin.global.cache.article_cate'))) {
-			$cate = Cache::get(config('admin.global.cache.article_cate'));
-			return $cate;
-		}
+//		if (Cache::has(config('admin.global.cache.article_cate'))) {
+//			$cate = Cache::get(config('admin.global.cache.article_cate'));
+//			return $cate;
+//		}
 		$categories = Category::all()->keyBy('id');
 		if ($categories) {
 			$temp = [];
 			foreach ($categories as $key => $cate) {
 				$temp[$cate->id] = $cate->name;
 			}
-			Cache::forever(config('admin.global.cache.article_cate'),$temp);
+//			Cache::forever(config('admin.global.cache.article_cate'),$temp);
 			return $temp;
 		}
 		return '';
@@ -147,7 +148,7 @@ class FrontRepository
 
 	/**
 	 * 获取分类下面的文章
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-05-18T17:22:28+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -160,7 +161,7 @@ class FrontRepository
 	/**
 	 * 获取热门文章
 	 * @date   2016-05-22
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
 	public function hotArticle()
@@ -182,7 +183,7 @@ class FrontRepository
 	/**
 	 * 获取Redis浏览量最高的id
 	 * @date   2016-05-22
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
 	private function getHotIds($sort_name,$field,$limit = [0,10],$sort = 'DESC')
@@ -193,7 +194,7 @@ class FrontRepository
 	 * 获取标签
 	 * 暂时先获取一定数量的标签，以后再自定义标签展示
 	 * @date   2016-05-22
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
 	public function tags()
@@ -211,7 +212,7 @@ class FrontRepository
 	/**
 	 * 获取标签下的文章
 	 * @date   2016-05-22
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $id [description]
 	 * @return [type]         [description]
 	 */
@@ -229,7 +230,7 @@ class FrontRepository
 	/**
 	 * 根据标签ID获取标签
 	 * @date   2016-05-22
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $id [description]
 	 * @return [type]         [description]
 	 */

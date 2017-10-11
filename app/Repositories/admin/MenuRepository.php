@@ -3,11 +3,13 @@ namespace App\Repositories\admin;
 use App\Models\Menu;
 use Cache;
 use Flash;
+use Illuminate\Support\Facades\Auth;
+
 class MenuRepository
 {
 	/**
 	 * 获取菜单数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T17:10:54+0800
 	 * @return [type]                   [description]
 	 */
@@ -22,7 +24,7 @@ class MenuRepository
 	}
 	/**
 	 * 递归迭代菜单关系
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T10:36:20+0800
 	 * @param  [type]                   $menus [description]
 	 * @param  integer                  $pid   [description]
@@ -40,7 +42,7 @@ class MenuRepository
 	}
 	/**
 	 * 缓存菜单数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T13:10:53+0800
 	 */
 	public function setMenuListCache()
@@ -68,7 +70,7 @@ class MenuRepository
 	}
 	/**
 	 * 获取菜单数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T10:37:38+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -85,7 +87,7 @@ class MenuRepository
 	}
 	/**
 	 * 修改菜单数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T14:05:54+0800
 	 * @param  [type]                   $request [description]
 	 * @param  [type]                   $id      [description]
@@ -110,7 +112,7 @@ class MenuRepository
 	}
 	/**
 	 * 添加菜单
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T14:32:54+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -130,7 +132,7 @@ class MenuRepository
 
 	/**
 	 * 菜单排序
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T15:43:19+0800
 	 * @return [type]                   [description]
 	 */
@@ -156,7 +158,7 @@ class MenuRepository
 	}
 	/**
 	 * 删除菜单
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-20T16:52:27+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]

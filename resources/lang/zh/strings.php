@@ -17,11 +17,11 @@ return [
 		'active' => ['fa fa-navicon','正常'],
 		'trash' => ['fa fa-trash','回收站'],
 	],
-	'user' => [
-		'audit' => ['fa fa-paw','待审核'],
-		'active' => ['fa fa-navicon','正常'],
-		'trash' => ['fa fa-trash','回收站'],
-	],
+    'user' => [
+        'audit' => ['fa fa-paw','待审核'],
+        'active' => ['fa fa-navicon','正常'],
+        'trash' => ['fa fa-trash','回收站'],
+    ],
 	'cate' => [
 		'audit' => ['fa fa-paw','待审核'],
 		'active' => ['fa fa-navicon','正常'],
@@ -32,4 +32,9 @@ return [
 		'active' => ['fa fa-navicon','正常'],
 		'trash' => ['fa fa-trash','回收站'],
 	],
+    'album' => [
+        'audit' => ['fa fa-paw','待审核'],
+        'active' => ['fa fa-navicon','正常'],
+        'trash' => ['fa fa-trash','回收站'],
+    ],
 ];

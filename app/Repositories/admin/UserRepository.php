@@ -10,7 +10,7 @@ class UserRepository
 {
 	/**
 	 * datatable获取数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T21:14:37+0800
 	 * @return [type]                   [description]
 	 */
@@ -110,7 +110,7 @@ class UserRepository
 
 	/**
 	 * 添加用户
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-14T11:32:04+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]
@@ -140,7 +140,7 @@ class UserRepository
 	}
 	/**
 	 * 修改用户视图
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-14T15:02:10+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -162,7 +162,7 @@ class UserRepository
 	}
 	/**
 	 * 修改用户资料
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-14T15:17:25+0800
 	 * @param  [type]                   $request [description]
 	 * @param  [type]                   $id      [description]
@@ -192,7 +192,7 @@ class UserRepository
 
 	/**
 	 * 修改用户状态
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-14T11:50:45+0800
 	 * @param  [type]                   $id     [description]
 	 * @param  [type]                   $status [description]
@@ -215,7 +215,7 @@ class UserRepository
 
 	/**
 	 * 删除角色
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:51:19+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -233,7 +233,7 @@ class UserRepository
 
 	/**
 	 * 查看角色权限
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T17:09:22+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]

@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-<title>{{$tag->name}} - i晚黎博客</title>
+<title>{{$tag->name}} - x胖子博客</title>
 @endsection
 @section('promo')
 <section class="breadcrumbs-v5 bg-position-fixed breadcrumbs-v5-bg-img-v4">
@@ -41,7 +41,8 @@
                          -  <i class="fa fa-clock-o"></i> {{$v->created_at}}
                     </span>
                     <span class="blog-grid-supplemental-title pull-right">
-                        <i class="fa fa-eye"></i> {{Redis::get(config('admin.global.redis.article_view').$v->id)}}
+                        <i class="fa fa-eye"></i>
+                        {{Illuminate\Support\Facades\Redis::get(config('admin.global.redis.article_view').$v->id)}}
                     </span>
                 </div>
             </div>
@@ -50,5 +51,7 @@
     @endforeach
     @endif
 </div>
+@if($articles)
 {!! $articles->links() !!}
+@endif
 @endsection

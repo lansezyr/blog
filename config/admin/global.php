@@ -70,13 +70,36 @@ return[
 		// trait 中的 action 参数
 		'action' => 'article',
 	],
+    ////////
+    //相册//
+    ////////
+    'album' => [
+        // 控制是否显示查看按钮
+        'show' => true,
+        // trait 中的 action 参数
+        'action' => 'album',
+        // trait 中的add photo参数
+        'add_photo' => true,
+        'photos' => true,
+    ],
+    ////////
+    //照片//
+    ////////
+    'photo' => [
+        // 控制是否显示查看按钮
+        'show' => true,
+        // trait 中的 action 参数
+        'action' => 'photo',
+        // trait 中的add photo参数
+        'add' => true,
+    ],
 	// 七牛图片上传路径
-	'imagePath' => 'iwanli/image/',
+	'imagePath' => 'xpangzi/image/',
 	// 每页显示条数
 	'paginate' => 6,
 	// 缓存
 	'cache' => [
-		'menu' => 'menuList',
+		'menu' => 'menuList_',
 		'front' => 'frontMenu',
 		'category' => 'category',
 		'article_cate' => 'article_cate',

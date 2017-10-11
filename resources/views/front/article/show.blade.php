@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-<title>{{$article->title}} - i晚黎博客</title>
+<title>{{$article->title}} - i胖子博客</title>
 @endsection
 @section('css')
 <link href="{{asset('front/plugins/highlight/styles/monokai-sublime.css')}}" rel="stylesheet" type="text/css"/>
@@ -8,7 +8,7 @@
 @section('promo')
 <section class="breadcrumbs-v5 bg-position-fixed breadcrumbs-v5-bg-img-v4">
     <div class="container">
-        <h2 class="breadcrumbs-v5-title">I am Wanli</h2>
+        <h2 class="breadcrumbs-v5-title">I am xPangZi</h2>
         <span class="breadcrumbs-v5-subtitle">I am a slow walker, but I never walk backwards...</span>
     </div>
 </section>

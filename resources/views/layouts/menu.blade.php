@@ -28,8 +28,8 @@
 
                 <div class="navbar-logo">
                     <a class="navbar-logo-wrap" href="{{url('/')}}">
-                        <img class="navbar-logo-img navbar-logo-img-white" src="{{asset('front/img/logo-default-white.png')}}" alt="Ark">
-                        <img class="navbar-logo-img navbar-logo-img-dark" src="{{asset('front/img/logo-default.png')}}" alt="Ark">
+                        <img class="navbar-logo-img navbar-logo-img-white" style="width: auto;height: auto;max-width: 150%;max-height: 150%;" src="{{asset('front/img/logo-default-white.png')}}" alt="Ark">
+                        <img class="navbar-logo-img navbar-logo-img-dark" style="width: auto;height: auto;max-width: 150%;max-height: 150%;" src="{{asset('front/img/logo-default.png')}}" alt="Ark">
                     </a>
                 </div>
             </div>
@@ -64,8 +64,23 @@
                         @endforeach
                         @endif
                         <li class="nav-item">
-                            <a class="nav-item-child radius-3" href="{{url('article/25')}}">
-                                Laravel 视频教程
+                            <a class="nav-item-child radius-3" href="#">
+                                GAMES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" target="_blank" href="{{url('game/PlantsVSZombies/index.htm')}}">植物大战僵尸</a></li>
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" target="_blank" href="{{url('game/Tetris/index.htm')}}">俄罗斯方块</a></li>
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" target="_blank" href="{{url('game/Pintu/index.htm')}}">拼图游戏</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-child radius-3" href="{{url('/album')}}">
+                                Album
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-child radius-3" href="{{url('/admin')}}">
+                                Backend Entrance
                             </a>
                         </li>
                     </ul>

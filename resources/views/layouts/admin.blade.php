@@ -7,7 +7,7 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>Metronic | Blank Page Layout</title>
+        <title>XPANGZI | Blog Manager</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -27,7 +27,7 @@
         <link href="{{asset('backend/css/layout.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('backend/css/darkblue.min.css')}}" rel="stylesheet" type="text/css" id="style_color" />
         <!-- END THEME LAYOUT STYLES -->
-        <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+        <link rel="shortcut icon" href="{{asset('backend/img/backend-favicon.ico')}}" />
         </head>
     <!-- END HEAD -->
 
@@ -39,7 +39,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="{{url('admin')}}">
-                        <img src="{{asset('backend/img/logo.png')}}" alt="logo" class="logo-default" /> </a>
+                        <img src="{{asset('backend/img/logo.png')}}" alt="logo" class="logo-default" style="margin-top: 7px;" /> </a>
                     <div class="menu-toggler sidebar-toggler"> </div>
                 </div>
                 <!-- END LOGO -->
@@ -112,7 +112,7 @@
         <!-- END CONTAINER -->
         <div class="page-footer">
             <div class="page-footer-inner"> 
-                2014 © Metronic by keenthemes.
+                2017 © Blog by XPangZi.
             </div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>

@@ -13,7 +13,7 @@ a:hover{ color:#f60; }
 </head>
 <body>
 <div class="erro-img">
-<a  href="{{url()->previous()}}" title="返回IT之家首页"><img src="http://img.ithome.com/file/images/404.png"  alt="404错误，没有找到页面" style="border:0;" /></a>
+<a  href="{{url()->previous()}}" title="返回首页"><img src="http://img.ithome.com/file/images/404.png"  alt="404错误，没有找到页面" style="border:0;" /></a>
 <p>{{$exception->getMessage()}}</p>
 <span class="notice-text">不要慌！<strong id="overTime" style="font-size:18px;color:red;">5</strong> 秒后将自动返回上一页，请稍候...</span>
 </div>

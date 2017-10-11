@@ -16,7 +16,7 @@ class MenuController extends Controller
     }
 	/**
 	 * 菜单首页
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-19T10:50:12+0800
 	 * @return [type]                   [description]
 	 */
@@ -27,7 +27,7 @@ class MenuController extends Controller
     }
     /**
      * 获取菜单数据
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-20T10:35:37+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -39,7 +39,7 @@ class MenuController extends Controller
     }
     /**
      * 修改菜单
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-20T14:20:46+0800
      * @param  MenuRequest              $request [description]
      * @param  [type]                   $id      [description]
@@ -52,7 +52,7 @@ class MenuController extends Controller
     }
     /**
      * 添加菜单
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-20T14:33:10+0800
      * @param  MenuRequest              $request [description]
      * @return [type]                            [description]
@@ -64,7 +64,7 @@ class MenuController extends Controller
     }
     /**
      * 菜单排序
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-20T15:36:17+0800
      * @return [type]                   [description]
      */
@@ -76,7 +76,7 @@ class MenuController extends Controller
 
     /**
      * 删除菜单
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-20T16:52:42+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

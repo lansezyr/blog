@@ -25,7 +25,7 @@ class TagController extends Controller
      * datatable获取数据
      * 
      * @date   2016-05-06
-     * @author 晚黎
+     * @author 胖子
      * @return [type]     [description]
      */
     public function ajaxIndex()
@@ -36,7 +36,7 @@ class TagController extends Controller
     /**
      * 添加标签视图
      * @date   2016-05-06
-     * @author 晚黎
+     * @author 胖子
      * @return [type]     [description]
      */
     public function create()
@@ -47,7 +47,7 @@ class TagController extends Controller
     /**
      * 添加标签
      * @date   2016-05-06
-     * @author 晚黎
+     * @author 胖子
      * @param  TagRequest $request [description]
      * @return [type]                     [description]
      */
@@ -60,7 +60,7 @@ class TagController extends Controller
     /**
      * 修改标签视图
      * @date   2016-05-06
-     * @author 晚黎
+     * @author 胖子
      * @param  [type]     $id [description]
      * @return [type]         [description]
      */
@@ -72,7 +72,7 @@ class TagController extends Controller
     /**
      * 修改标签信息
      * @date   2016-05-06
-     * @author 晚黎
+     * @author 胖子
      * @param  TagRequest $request [description]
      * @param  [type]     $id      [description]
      * @return [type]              [description]
@@ -85,7 +85,7 @@ class TagController extends Controller
 
     /**
      * 删除标签
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-14T11:52:40+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

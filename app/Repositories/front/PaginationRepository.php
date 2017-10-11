@@ -23,7 +23,7 @@ class PaginationRepository extends BootstrapThreePresenter
 
     /**
      * 自定义上一页和下一页按钮禁用样式
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-10T11:06:31+0800
      * @param  [type]                   $text [description]
      * @return [type]                         [description]
@@ -38,7 +38,7 @@ class PaginationRepository extends BootstrapThreePresenter
     }
     /**
      * 自定义上一页和下一页按钮样式
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-10T11:22:34+0800
      * @param  [type]                   $url  [description]
      * @param  [type]                   $page [description]
@@ -59,7 +59,7 @@ class PaginationRepository extends BootstrapThreePresenter
 
     /**
      * 重写 BootstrapThreeNextPreviousButtonRendererTrait 上一页按钮
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-10T11:07:41+0800
      * @param  string                   $text [description]
      * @return [type]                         [description]
@@ -96,7 +96,7 @@ class PaginationRepository extends BootstrapThreePresenter
 
     /**
      * 重写 UrlWindowPresenterTrait 中 getPageLinkWrapper 方法,让上一页下一页样式不一样
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-10T11:18:49+0800
      * @param  [type]                   $url  [description]
      * @param  [type]                   $page [description]

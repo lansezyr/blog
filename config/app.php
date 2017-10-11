@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', 'base64:3xinswqvJKMYifMHfYS4fWlgE2n0V+yoMHrLLbP91yI='),
 
     'cipher' => 'AES-256-CBC',
 
@@ -228,7 +228,8 @@ return [
         'TagRepository' => App\Facades\TagFacade::class,
         'ArticleRepository' => App\Facades\ArticleFacade::class,
         'FrontRepository' => App\Facades\FrontFacade::class,
-
+        'AlbumRepository' => App\Facades\AlbumFacade::class,
+        'PhotoRepository' => App\Facades\PhotoFacade::class,
     ],
 
 ];

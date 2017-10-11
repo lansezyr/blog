@@ -2,7 +2,7 @@
 @section('promo')
 <div class="promo-block-v1 promo-block-v1-bg-img-v3 fullheight text-center">
     <div class="container vertical-center-aligned">
-        <h1 class="promo-block-v1-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0">Welcome To iWanli's Blog</h1>
+        <h1 class="promo-block-v1-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0">Welcome To xPangZi's Blog</h1>
         <p class="promo-block-v1-text margin-b-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
             I am a slow walker, but I never walk backwards...
         </p>
@@ -58,7 +58,8 @@
                          -  <i class="fa fa-clock-o"></i> {{$v->created_at}}
                     </span>
                     <span class="blog-grid-supplemental-title pull-right">
-                        <i class="fa fa-eye"></i> {{Redis::get(config('admin.global.redis.article_view').$v->id)}}
+                        <i class="fa fa-eye"></i>
+                        {{\Illuminate\Support\Facades\Redis::get(config('admin.global.redis.article_view').$v->id)}}
                     </span>
                 </div>
             </div>

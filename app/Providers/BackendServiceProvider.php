@@ -12,6 +12,7 @@ class BackendServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         view()->composer('*', function ($view) {
             //共享菜单数据
             $menus = MenuRepository::index();
@@ -48,5 +49,12 @@ class BackendServiceProvider extends ServiceProvider
         $this->app->singleton('ArticleRepository', function($app){
             return new \App\Repositories\admin\ArticleRepository();
         });
+        $this->app->singleton('AlbumRepository', function($app){
+            return new \App\Repositories\admin\AlbumRepository();
+        });
+        $this->app->singleton('PhotoRepository', function($app){
+            return new \App\Repositories\admin\PhotoRepository();
+        });
+
     }
 }

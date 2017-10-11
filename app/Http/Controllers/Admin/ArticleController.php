@@ -33,7 +33,7 @@ class ArticleController extends Controller
     }
     /**
      * 添加文章视图
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-12T09:56:23+0800
      * @return [type]                   [description]
      */
@@ -47,7 +47,7 @@ class ArticleController extends Controller
     /**
      * 添加文章
      * @date   2016-05-06
-     * @author 晚黎
+     * @author 胖子
      * @param  ArticleRequest $request [description]
      * @return [type]                     [description]
      */
@@ -59,7 +59,7 @@ class ArticleController extends Controller
 
     /**
      * 修改文章视图
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-08T11:00:11+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -73,7 +73,7 @@ class ArticleController extends Controller
     }
     /**
      * 修改文章
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-08T11:00:37+0800
      * @param  ArticleRequest           $request [description]
      * @param  [type]                   $id      [description]
@@ -87,7 +87,7 @@ class ArticleController extends Controller
 
     /**
      * 修改文章状态
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-08T11:00:53+0800
      * @param  [type]                   $id     [description]
      * @param  [type]                   $status [description]
@@ -101,7 +101,7 @@ class ArticleController extends Controller
 
     /**
      * 删除文章
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-08T11:01:06+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -114,7 +114,7 @@ class ArticleController extends Controller
 
     /**
      * 查看文章信息
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-12T09:41:40+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -126,7 +126,7 @@ class ArticleController extends Controller
 
     /**
      * markdown上传图片
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-05-12T09:42:04+0800
      * @param  Request                  $request [description]
      * @return [type]                            [description]

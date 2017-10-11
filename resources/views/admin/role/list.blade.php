@@ -70,7 +70,7 @@
                               <div class="form-group form-md-line-input">
                                 <div class="input-group has-success">
                                     <span class="input-group-addon">
-                                        <i class="fa fa-envelope"></i>
+                                        <i class="fa fa-book"></i>
                                     </span>
                                     <input type="text" class="form-control form-filter" name="slug" placeholder="{{ trans('labels.role.slug') }}">
                                     <div class="form-control-focus"> </div>

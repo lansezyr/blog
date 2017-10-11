@@ -21,7 +21,7 @@ class RoleController extends Controller
     }
 	/**
 	 * 角色列表
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T11:25:38+0800
 	 * @return [type]                   [description]
 	 */
@@ -32,7 +32,7 @@ class RoleController extends Controller
 
    	/**
    	 * datatable 获取数据
-   	 * @author 晚黎
+   	 * @author 胖子
    	 * @date   2016-04-13T11:25:58+0800
    	 * @return [type]                   [description]
    	 */
@@ -43,7 +43,7 @@ class RoleController extends Controller
     }
     /**
      * 添加角色视图
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:26:16+0800
      * @return [type]                   [description]
      */
@@ -55,7 +55,7 @@ class RoleController extends Controller
 
     /**
      * 添加角色
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:26:35+0800
      * @param  RoleRequest        $request [description]
      * @return [type]                            [description]
@@ -68,7 +68,7 @@ class RoleController extends Controller
 
     /**
      * 修改角色视图
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:26:42+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -81,7 +81,7 @@ class RoleController extends Controller
     }
     /**
      * 修改角色
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:26:57+0800
      * @param  RoleRequest        $request [description]
      * @param  [type]                   $id      [description]
@@ -95,7 +95,7 @@ class RoleController extends Controller
 
     /**
      * 修改角色状态
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:27:23+0800
      * @param  [type]                   $id     [description]
      * @param  [type]                   $status [description]
@@ -109,7 +109,7 @@ class RoleController extends Controller
 
     /**
      * 删除角色
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:27:34+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -121,7 +121,7 @@ class RoleController extends Controller
     }
     /**
      * 查看角色权限
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T17:08:46+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

@@ -59,4 +59,15 @@ return[
 		'audit'		=> 'admin.articles.audit',
 		'show'		=> 'admin.articles.show',
 	],
+    'album' => [
+        'create'    => 'admin.album.create',
+        'list' 		=> 'admin.album.list',
+        'edit' 		=> 'admin.album.edit',
+        'destory' 	=> 'admin.album.delete',
+        'trash' 	=> 'admin.album.trash',
+        'audit'		=> 'admin.album.audit',
+        'undo' 		=> 'admin.album.undo',
+        'add_photo' => 'admin.album.addphoto',
+        'photos'    => 'admin.album.photos',
+    ],
 ];

@@ -19,7 +19,7 @@
         <label class="control-label visible-ie8 visible-ie9">{{trans('auth.password')}}</label>
         <input class="form-control form-control-solid placeholder-no-fix" type="password" placeholder="Password" name="password" /> 
     </div>
-    <div class="form-group">
+    <div class="form-group" style="display: none;">
         <label class="control-label visible-ie8 visible-ie9">{{trans('auth.captcha')}}</label>
         <div class="input-group">
             <input id="newpassword" class="form-control" type="text" name="captcha" placeholder="captcha">
@@ -36,7 +36,7 @@
     </div>
     <div class="create-account">
         <p>
-            <a href="javascript:;" id="register-btn" class="uppercase">Create an account</a>
+            <a href="{{url('/register')}}" id="register-btn" class="uppercase">Create an account</a>
         </p>
     </div>
 </form>

@@ -11,7 +11,7 @@ class TagRepository
 {
 	/**
 	 * datatable获取数据
-	 * @author 晚黎
+	 * @author 胖子
 	 * @date   2016-04-13T21:14:37+0800
 	 * @return [type]                   [description]
 	 */
@@ -87,7 +87,7 @@ class TagRepository
 	/**
 	 * 添加标签
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $request [description]
 	 * @return [type]              [description]
 	 */
@@ -105,7 +105,7 @@ class TagRepository
 	/**
 	 * 修改标签
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $id [description]
 	 * @return [type]         [description]
 	 */
@@ -120,7 +120,7 @@ class TagRepository
 	/**
 	 * 修改标签信息
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $request [description]
 	 * @param  [type]     $id      [description]
 	 * @return [type]              [description]
@@ -143,7 +143,7 @@ class TagRepository
 	/**
 	 * 删除标签
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @param  [type]     $id [description]
 	 * @return [type]         [description]
 	 */
@@ -161,7 +161,7 @@ class TagRepository
 	/**
 	 * 查出所有的标签
 	 * @date   2016-05-06
-	 * @author 晚黎
+	 * @author 胖子
 	 * @return [type]     [description]
 	 */
 	public function findAllTag()

@@ -27,7 +27,7 @@ class PermissionController extends Controller
     }
     /**
      * 添加权限视图
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-12T09:56:23+0800
      * @return [type]                   [description]
      */
@@ -38,7 +38,7 @@ class PermissionController extends Controller
 
     /**
      * 添加权限
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-12T13:20:45+0800
      * @param  PermissionRequest        $request [description]
      * @return [type]                            [description]
@@ -51,7 +51,7 @@ class PermissionController extends Controller
 
     /**
      * 修改权限视图
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-12T17:51:46+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -63,7 +63,7 @@ class PermissionController extends Controller
     }
     /**
      * 修改权限
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-12T17:51:35+0800
      * @param  PermissionRequest        $request [description]
      * @param  [type]                   $id      [description]
@@ -77,7 +77,7 @@ class PermissionController extends Controller
 
     /**
      * 修改权限状态
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T09:35:06+0800
      * @param  [type]                   $id     [description]
      * @param  [type]                   $status [description]
@@ -91,7 +91,7 @@ class PermissionController extends Controller
 
     /**
      * 删除权限
-     * @author 晚黎
+     * @author 胖子
      * @date   2016-04-13T11:04:52+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
